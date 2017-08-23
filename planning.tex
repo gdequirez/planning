@@ -1,0 +1,171 @@
+%définition du type de document : article
+%définition de la taille de la page : A4
+%définition de la taille d'écriture : 11
+\documentclass[a4paper,10pt]{article}
+
+%pour taper directement les accents
+\usepackage[latin1]{inputenc}
+
+%pour parler français
+\usepackage[french]{babel}
+
+%pour insérer des boites bclogo
+\usepackage[tikz]{bclogo}
+
+%package graphique
+\usepackage{fancybox}
+
+%gestion des liens
+\usepackage[colorlinks=true]{hyperref}
+
+\hypersetup{
+	colorlinks=true, %colorise les liens
+	breaklinks=true, %permet le retour à la ligne dans les liens trop longs
+	urlcolor= blue,  %couleur des hyperliens
+	linkcolor= black, %couleur des liens internes
+	plainpages=false  %pour palier à "Bookmark problems can occur when you have duplicate page numbers, for example, if you have a page i and a page 1."
+}
+
+\usepackage{graphicx}
+
+\usepackage{amsmath}
+
+
+\usepackage{csquotes}
+
+%norme de caractère pour que les accents apparaissent
+\usepackage[T1]{fontenc}
+
+%gestion de la couleur
+\usepackage{xcolor}
+
+%choix des marges à 1 cm
+\usepackage{geometry}
+\geometry{top=1.5cm,bottom=2.5cm,left=1cm,right=1cm}
+
+%définition en tête et pied de page
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand\headrulewidth{2pt}
+\fancyhead[L]{Terminale}
+\fancyhead[C]{}
+\fancyhead[R]{ISN}
+\renewcommand\footrulewidth{2pt}
+\fancyfoot[L]{Lycée Yourcenar - Le Mans (72)}
+\fancyfoot[C]{2017-2018}
+\fancyfoot[R]{Page \thepage}
+
+%création de la commande cadretitre
+\newcommand{\cadretitre}[2]{%
+  \boxput*(0,1){\colorbox{white}{\color{blue}#1}}%
+  {\setlength{\fboxsep}{12pt}%
+    \framebox[\linewidth][c]{\Huge{\textbf{#2}}}}}
+
+%début du corps du document
+\begin{document}
+\thispagestyle{fancy}
+\setlength{\parindent}{0cm}
+\setlength{\headheight}{1cm}
+\begin{minipage}[c]{0.88\linewidth}%
+\begin{center}
+\cadretitre{Divers}{Planning prévisionnel}%
+\end{center}%
+\end{minipage}%
+\hfill
+\begin{minipage}[c]{0.12\linewidth}%
+\begin{center}%
+\includegraphics[width=1.6cm]{planning.png}
+\end{center}%
+\end{minipage}%
+\section*{1er trimestre}
+Semaine 1 - Présentation python + format
+
+Guillaume
+\bigbreak
+Semaine 2 - Début fonction + taille fichier
+
+Guillaume
+\bigbreak
+Semaine 3 - \color{magenta}Exposé 1 - 10 min \color{black} + Binaire + bit/mot/octet + addition binaire
+
+Guillaume
+\bigbreak
+Semaine 4 - \color{magenta}Exposé 2 - 10 min \color{black} + Processing 1/2
+
+Laurène
+\bigbreak
+Semaine 5 - \color{magenta}Exposé 3 - 10 min \color{black} + Processing 2/2
+
+Laurène
+\bigbreak
+Semaine 6 - \color{magenta}Exposé 4 - 10 min \color{black} + HTML + \color{blue} Arduino 1 - 30 min\color{black}
+
+Guillaume + Guillaume
+\bigbreak
+Semaine 7 - Evaluation 1h + mini projet 1
+\bigbreak
+Semaine 8 - Mini projet 1
+\bigbreak
+Semaine 9 - \color{magenta}Exposé 5 - 10 min \color{black} + HTML + \color{blue} Arduino 2 - 30 min\color{black}
+
+Guillaume + Guillaume
+\bigbreak
+Semaine 10 - \color{magenta}Exposé 6 - 10 min \color{black} + Robotique + cryptage 1/2
+
+Laurène
+
+\section*{2eme trimestre}
+Semaine 11 - \color{magenta}Exposé 7 - 10 min \color{black} + Robotique + cryptage 2/2
+
+Laurène
+\bigbreak
+Semaine 12 - \color{magenta}Exposé 8 - 10 min (si groupe à 16) \color{black} + Python avancé + tri + \color{blue} Arduino 3 - 30 min\color{black}
+
+Laurène + Guillaume
+\bigbreak
+Semaine 13 - Python avancé + dichotomie + \color{blue} Arduino 4 - 30 min\color{black}
+
+Laurène + Guillaume
+\bigbreak
+Semaine 14 - Processing avancé et fonction + \color{blue} Arduino 5 - 30 min\color{black}
+
+Laurène + Guillaume
+\bigbreak
+Semaine 15 - Evaluation 1h + mini projet 2
+\bigbreak
+Semaine 16 - Mini projet 2
+\bigbreak
+Semaine 17 - Projet final 1
+\bigbreak
+Semaine 18 - Projet final 2
+\bigbreak
+Semaine 19 - Projet final 3
+\bigbreak
+Semaine 20 - Projet final 4
+
+\section*{3eme trimestre}
+Semaine 21 - Projet final 5
+\bigbreak
+Semaine 22 - Projet final 6
+\bigbreak
+Semaine 23 - Projet final 7
+\bigbreak
+Semaine 24 - Projet final 8
+\bigbreak
+Semaine 25 - Projet final 9
+\bigbreak
+Semaine 26 - Projet final 10
+\bigbreak
+Semaine 27 - Adressage + routage + réseau 1/2
+\bigbreak
+Semaine 28 - Adressage + routage + réseau 2/2
+\bigbreak
+Semaine 29 - ???
+\bigbreak
+Semaine 30 - ???
+
+% Fin du document
+\end{document}
+
+
+
